@@ -1,0 +1,21 @@
+{
+  "version": {
+    "license": "MIT",
+    "approval_notes": "No build step, no minified code. Source: https://github.com/ultimatecoder/neet2leet. The extension sends the NeetCode problem title to leetcode.com/graphql (questionList search) and, as a fallback, fetches neetcode.io's public page and main JS bundle to read NeetCode's own slug mapping."
+  },
+  "categories": {
+    "firefox": ["other"]
+  },
+  "summary": {
+    "en-US": "Adds an \"Open on LeetCode\" button to NeetCode problem pages that opens the matching LeetCode problem in a new tab."
+  },
+  "description": {
+    "en-US": "Follow the NeetCode roadmap but solve on LeetCode? neet2leet adds a button next to the problem title on every NeetCode problem page. It finds the matching LeetCode problem automatically (exact title search on LeetCode, with NeetCode's own problem mapping as a fallback) and opens it in a new tab.\n\nNo tracking or analytics. Found links are cached locally."
+  },
+  "homepage": {
+    "en-US": "https://github.com/ultimatecoder/neet2leet"
+  },
+  "support_url": {
+    "en-US": "https://github.com/ultimatecoder/neet2leet/issues"
+  }
+}

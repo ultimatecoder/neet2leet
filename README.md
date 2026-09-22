@@ -40,7 +40,7 @@ Note: Temporary add-ons are removed when Firefox restarts, so repeat the steps a
 
 ```bash
 npx web-ext lint --ignore-files CLAUDE.md
-npx web-ext build --overwrite-dest --ignore-files CLAUDE.md LICENSE README.md
+npx web-ext build --overwrite-dest --ignore-files CLAUDE.md LICENSE README.md amo-metadata.json
 ```
 
 The zip is written to `web-ext-artifacts/`.
@@ -48,3 +48,14 @@ The zip is written to `web-ext-artifacts/`.
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Publishing to addons.mozilla.org
+
+Maintainer-only. Uses your own AMO API credentials
+(https://addons.mozilla.org/developers/addon/api/key/); never commit them.
+
+```bash
+npx web-ext sign --channel=listed --amo-metadata=amo-metadata.json --ignore-files CLAUDE.md LICENSE README.md amo-metadata.json --api-key="$AMO_JWT_ISSUER" --api-secret="$AMO_JWT_SECRET"
+```
+
+Bump `version` in `manifest.json` before each new submission.
