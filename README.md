@@ -45,6 +45,10 @@ npx web-ext build --overwrite-dest --ignore-files CLAUDE.md LICENSE README.md am
 
 The zip is written to `web-ext-artifacts/`.
 
+## Author
+
+Jaysinh Shukla ([@ultimatecoder](https://github.com/ultimatecoder))
+
 ## License
 
 MIT, see [LICENSE](LICENSE).

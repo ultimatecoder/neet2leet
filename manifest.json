@@ -3,6 +3,7 @@
   "name": "neet2leet",
   "version": "1.0.0",
   "description": "Adds an Open on LeetCode button to NeetCode problem pages.",
+  "author": "Jaysinh Shukla",
   "homepage_url": "https://github.com/ultimatecoder/neet2leet",
   "icons": {
     "48": "icons/icon.svg",
